@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tanya Sharma · AI/ML Engineer</title>
+<style>
+:root{--bg:#0f0704;--bg2:#190d07;--card:#21120b;--ink:#f1e3d3;--mute:#b99c85;--acc:#a0612f;--mar:#4a2a18;--gold:#d2a26a;--line:#33200f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#efe1d0;--bg2:#e2cdb4;--card:#f7ede0;--ink:#1f0f08;--mute:#5a3b2a;--acc:#6b3a1f;--mar:#3e2214;--gold:#6f4420;--line:#cfb497}}
+:root[data-theme="light"]{--bg:#efe1d0;--bg2:#e2cdb4;--card:#f7ede0;--ink:#1f0f08;--mute:#5a3b2a;--acc:#6b3a1f;--mar:#3e2214;--gold:#6f4420;--line:#cfb497}
+:root[data-theme="dark"]{--bg:#0f0704;--bg2:#190d07;--card:#21120b;--ink:#f1e3d3;--mute:#b99c85;--acc:#a0612f;--mar:#4a2a18;--gold:#d2a26a;--line:#33200f}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Times New Roman",Times,serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:18px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;padding-top:calc(14px + env(safe-area-inset-top,0px));background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav b{font-size:22px;font-style:italic;color:var(--gold)}
+nav div a{margin-left:22px;color:var(--mute);font-size:16px;transition:color .2s}
+nav div a:hover{color:var(--gold)}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bean{position:absolute;bottom:-60px;width:18px;height:26px;border-radius:50%;background:var(--mar);opacity:.35;animation:rise linear infinite}
+.bean::after{content:"";position:absolute;left:50%;top:10%;bottom:10%;width:2px;background:var(--bg);transform:translateX(-50%) rotate(8deg);border-radius:2px}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg)}}
+main,footer{position:relative;z-index:1}
+section{padding:90px 6vw;max-width:1100px;margin:auto}
+h2{font-size:38px;font-weight:400;color:var(--gold);margin-bottom:8px}
+h2::after{content:"";display:block;width:70px;height:2px;background:var(--acc);margin-top:8px}
+.sub{color:var(--mute);margin-bottom:30px;font-style:italic}
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:110px}
+.cup{position:relative;width:90px;height:70px;margin-bottom:22px}
+.cup i{position:absolute;bottom:0;left:0;width:70px;height:50px;background:var(--mar);border-radius:0 0 34px 34px;border:2px solid var(--gold)}
+.cup u{position:absolute;bottom:12px;left:68px;width:22px;height:26px;border:3px solid var(--gold);border-left:0;border-radius:0 14px 14px 0}
+.cup svg.st{position:absolute;bottom:54px;width:14px;height:34px;opacity:0;overflow:visible;animation:steam 3.2s ease-in-out infinite}.cup svg.st path{fill:none;stroke:var(--mute);stroke-width:2.5;stroke-linecap:round}
+@keyframes steam{0%{opacity:0;transform:translate(0,10px)}30%{opacity:.75;transform:translate(6px,0)}60%{opacity:.5;transform:translate(-6px,-12px)}100%{opacity:0;transform:translate(4px,-28px)}}
+.hi{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:15px}
+h1{font-size:clamp(46px,9vw,92px);font-weight:400;line-height:1.05;margin:6px 0;background:linear-gradient(100deg,var(--ink),var(--gold),var(--acc),var(--ink));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 8s linear infinite}
+@keyframes flow{to{background-position:250% 0}}
+.type{font-size:clamp(20px,3.2vw,30px);color:var(--mute);min-height:1.6em}
+.type span{border-right:2px solid var(--gold);padding-right:4px;animation:blink .8s step-end infinite}
+@keyframes blink{50%{border-color:transparent}}
+.lead{max-width:640px;margin:18px 0 28px;color:var(--mute)}
+.btn{display:inline-block;padding:12px 26px;border:1px solid var(--gold);border-radius:30px;margin:0 10px 10px 0;transition:.25s;color:var(--ink)}
+.btn.p{background:var(--mar);border-color:var(--mar);color:#f3e6d8}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.3);background:var(--acc);color:#f3e6d8}
+.marq{overflow:hidden;border-block:1px solid var(--line);background:var(--bg2);padding:14px 0;position:relative;z-index:1}
+.marq div{display:flex;gap:46px;width:max-content;animation:slide 32s linear infinite;color:var(--gold);font-style:italic;font-size:21px}
+.marq:hover div{animation-play-state:paused}
+.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--card);border-radius:30px;padding:6px 16px;font-size:15px;color:var(--mute);margin-bottom:18px;width:fit-content}.pill i{width:8px;height:8px;border-radius:50%;background:#6fbf73;animation:pulse 2.4s infinite}h2 em{font-style:italic;color:var(--acc)}.sg{margin-top:14px;color:var(--mute);font-size:13px;letter-spacing:1.5px;text-transform:uppercase}.sg+.tags{margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;transition:.3s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;height:100%;width:4px;background:linear-gradient(var(--acc),var(--gold))}
+.card:hover{transform:translateY(-8px);box-shadow:0 14px 30px rgba(0,0,0,.35);border-color:var(--gold)}
+.card h3{font-weight:400;font-size:24px;color:var(--gold);margin-bottom:4px}
+.card small{color:var(--mute);font-style:italic;display:block;margin-bottom:10px}
+.card p,.card li{color:var(--ink);opacity:.9;font-size:17px}
+.card ul{padding-left:18px}
+.tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.tags span{font-size:14px;padding:3px 11px;border-radius:20px;background:var(--mar);color:#f3e6d8}
+.tl{border-left:2px solid var(--line);padding-left:26px;margin-left:8px}
+.tl .card{margin-bottom:22px}
+.tl .card::after{content:"";position:absolute;left:-36px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 5px var(--bg);animation:pulse 2.4s infinite}
+.tl .card{overflow:visible}
+@keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:30px}
+.stat{text-align:center;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.stat b{display:block;font-size:44px;font-weight:400;color:var(--gold)}
+.stat span{color:var(--mute);font-size:15px}
+.rv{opacity:0;transform:translateY(34px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+footer{text-align:center;padding:40px 6vw;color:var(--mute);border-top:1px solid var(--line);font-size:15px}
+#tg{background:none;border:1px solid var(--line);color:var(--gold);border-radius:20px;padding:4px 12px;font:inherit;font-size:15px;cursor:pointer;margin-left:18px}
+@media(max-width:640px){nav div a{display:none}section{padding:70px 6vw}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bg"></div>
+<nav><b>Tanya Sharma</b><div><a href="#about">About</a><a href="#exp">Experience</a><a href="#proj">Projects</a><a href="#pub">Research</a><a href="#contact">Contact</a><button id="tg" type="button">☾ / ☀</button></div></nav>
+
+<main>
+<section id="hero">
+  <div class="cup"><svg class="st" viewBox="0 0 14 34" style="left:14px"><path d="M7 34 C0 26 14 20 7 12 C0 4 14 2 7 0"/></svg><svg class="st" viewBox="0 0 14 34" style="left:32px;animation-delay:.8s"><path d="M7 34 C0 26 14 20 7 12 C0 4 14 2 7 0"/></svg><svg class="st" viewBox="0 0 14 34" style="left:50px;animation-delay:1.6s"><path d="M7 34 C0 26 14 20 7 12 C0 4 14 2 7 0"/></svg><i></i><u></u></div>
+  <div class="pill"><i></i>Open to AI/ML engineering and data roles</div><div class="hi">Hello, I'm</div>
+  <h1>Tanya Sharma</h1>
+  <div class="type"><span id="tw"></span></div>
+  <p class="lead">I turn messy, unlabeled data into answers people can trust: segmenting satellite imagery without a single label, building RAG systems that cite their sources, and engineering data pipelines that fail loudly instead of silently.</p>
+  <div><a class="btn p" href="#proj">View my work</a><a class="btn" href="https://github.com/Tanya206" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#contact">Get in touch</a></div>
+</section>
+
+
+
+<section id="about">
+  <h2>About <em>me</em></h2><p class="sub">A little brew of research, engineering and reliability.</p>
+  <div class="grid">
+    <div class="card rv"><h3>Who I am</h3><p>I'm an AI/ML engineer with a B.Tech in Computer Science (Jaypee Institute of Information Technology, 2025). My work keeps returning to one question: how do you get reliable answers from data that is unlabeled, unstructured or noisy? At ISRO's Space Applications Centre I tackled it with unsupervised deep learning, published at IEEE InGARSS 2025. Today I tackle it with citation-grounded RAG and observable data pipelines, shaped by a year as an SRE at Infosys.</p></div>
+    <div class="card rv"><h3>What I work with</h3><div class="sg">Core AI</div><div class="tags"><span>PyTorch</span><span>Scikit-learn</span><span>CNNs</span><span>Transformers</span><span>RAG</span><span>LangChain</span><span>HuggingFace</span></div><div class="sg">Data &amp; backend</div><div class="tags"><span>Python</span><span>SQL</span><span>C++</span><span>Airflow</span><span>SQLAlchemy</span><span>FastAPI</span><span>Rasterio</span><span>NumPy</span></div><div class="sg">Tools</div><div class="tags"><span>Git</span><span>Datadog</span><span>ChromaDB</span><span>Streamlit</span></div></div>
+  </div>
+  <div class="stats">
+    <div class="stat rv"><b data-n="1">0</b><span>IEEE publication</span></div>
+    <div class="stat rv"><b data-n="100" data-s="+">0</b><span>image patches clustered</span></div>
+    <div class="stat rv"><b data-n="21">0</b><span>GMM components</span></div>
+    <div class="stat rv"><b data-n="20">0</b><span>GitHub repositories</span></div>
+  </div>
+</section>
+
+<section id="exp">
+  <h2>Work <em>experience</em></h2><p class="sub">Where I've been working and researching.</p>
+  <div class="tl">
+    <div class="card rv"><h3>Systems Engineer, SRE · Infosys Ltd.</h3><small>Sept 2025 – Aug 2026 · Bengaluru</small>
+      <ul><li>Designed and configured Datadog APM monitors to improve application observability and service health monitoring.</li><li>Implemented Datadog Network Performance Monitoring for visibility into network traffic and service dependencies.</li><li>Evaluated centralized dashboards, finding monitoring gaps and documenting SLO/SLI configuration inconsistencies.</li></ul></div>
+    <div class="card rv"><h3>Research Trainee · Space Applications Centre (ISRO)</h3><small>May 2024 – July 2024 · Ahmedabad</small>
+      <ul><li>Built an unsupervised PyTorch pipeline to segment high-resolution multispectral satellite imagery without ground-truth labels.</li><li>Extracted latent features with VQ-VAE and SimCLR, then clustered with a Gaussian Mixture Model across 100+ Potsdam patches.</li><li>Evaluated cluster alignment with semantic classes using cross-histogram analysis.</li></ul></div>
+  </div>
+</section>
+
+<section id="proj">
+  <h2>Featured <em>projects</em></h2><p class="sub">Things I've built, from pipelines to RAG.</p>
+  <div class="grid">
+    <a class="card rv" href="https://github.com/Tanya206/Cited" target="_blank" rel="noopener"><h3>Cited</h3><small>Citation-grounded research assistant · in progress</small><p>Hybrid BM25 + dense retrieval with Reciprocal Rank Fusion, cross-encoder reranking and citation enforcement, so answers are backed by evidence. FastAPI backend, Streamlit UI, Ragas evaluation, Langfuse tracing.</p><div class="tags"><span>LangChain</span><span>ChromaDB</span><span>FastAPI</span><span>Ragas</span><span>Langfuse</span></div></a>
+    <a class="card rv" href="https://github.com/Tanya206/satellite-ndvi-pipeline" target="_blank" rel="noopener"><h3>Satellite NDVI Monitoring Pipeline</h3><small>Sentinel-2 · Mandya, Karnataka</small><p>Airflow DAG ingesting Sentinel-2 L2A imagery, with SCL cloud masking and AirflowSkipException propagation to avoid silent failures. NDVI from Bands 8A and 4 with idempotent SQLAlchemy upserts and structured JSON logs.</p><div class="tags"><span>Airflow</span><span>SQLAlchemy</span><span>Sentinel-2</span><span>Python</span></div></a>
+    <a class="card rv" href="https://github.com/Tanya206/Conversational-PDF-Chatbot-with-Chat-History-RAG-" target="_blank" rel="noopener"><h3>Conversational PDF Chatbots</h3><small>RAG with chat history</small><p>AI chatbots that answer questions from uploaded PDFs using Retrieval-Augmented Generation, built with LangChain and HuggingFace embeddings. They keep chat history in context so follow-up questions work naturally.</p><div class="tags"><span>RAG</span><span>LangChain</span><span>HuggingFace</span><span>ChromaDB</span></div></a>
+    
+    <a class="card rv" href="https://github.com/Tanya206/GRU-RNN-Next-Word-Prediction---Hamlet" target="_blank" rel="noopener"><h3>Hamlet Next-Word Prediction</h3><small>GRU-RNN · Jupyter</small><p>A GRU-based recurrent network for next-word prediction trained on Shakespeare's Hamlet.</p><div class="tags"><span>GRU</span><span>RNN</span><span>NLP</span></div></a>
+    
+  </div>
+</section>
+
+<section id="pub">
+  <h2>Published <em>research</em></h2><p class="sub">Peer-reviewed work.</p>
+  <div class="card rv"><h3>Unsupervised Segmentation of High-Resolution Multispectral Satellite Images</h3><small>IEEE GRSS InGARSS 2025 · indexed on IEEE Xplore</small><p>A fully unsupervised pipeline combining VQ-VAE representation learning, SimCLR contrastive learning and GMM clustering (21 components) for label-free segmentation of satellite imagery, evaluated on the ISPRS Potsdam benchmark.</p><div class="tags"><span>VQ-VAE</span><span>SimCLR</span><span>GMM</span><span>ISPRS Potsdam</span></div></div>
+</section>
+
+<section id="edu">
+  <h2>Edu<em>cation</em></h2><p class="sub">Academic background.</p>
+  <div class="card rv"><h3>B.Tech, Computer Science &amp; Engineering</h3><small>Jaypee Institute of Information Technology, Noida · Graduated June 2025</small><p>Core coursework in data structures and algorithms, DBMS, operating systems and object-oriented programming.</p></div>
+</section>
+
+<section id="contact">
+  <h2>Get in <em>touch</em></h2><p class="sub">Let's talk over coffee, virtual or otherwise.</p>
+  <div class="card rv"><p>Open to AI/ML engineering and data pipeline roles. Based in Bengaluru, India.</p>
+  <div class="links"><a class="btn p" href="mailto:tanya.sharma2217@gmail.com">Email</a><a class="btn" href="https://linkedin.com/in/tanyas22" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Tanya206" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://leetcode.com/TanyaSH" target="_blank" rel="noopener">LeetCode</a></div></div>
+</section>
+</main>
+<footer>© 2026 Tanya Sharma · Brewed with care ☕</footer>
+
+<script>
+(function(){
+var bg=document.getElementById('bg');
+for(var i=0;i<18;i++){var b=document.createElement('div');b.className='bean';b.style.left=Math.random()*100+'%';b.style.animationDuration=(16+Math.random()*20)+'s';b.style.animationDelay=(-Math.random()*30)+'s';b.style.transform='scale('+(0.6+Math.random()*0.9)+')';bg.appendChild(b)}
+var skills=['Python','C++','SQL','PyTorch','Scikit-learn','Transformers','RAG','LangChain','HuggingFace','Apache Airflow','SQLAlchemy','ChromaDB','Streamlit','Datadog','Rasterio','FastAPI'];
+var h='';
+for(var k=0;k<2;k++)skills.forEach(function(s){h+='<span>☕ '+s+'</span>'});
+
+var roles=['AI/ML Engineer','RAG & LLM Systems Builder','Data Pipeline Engineer','Satellite Imagery Researcher'],ri=0,ci=0,del=false,tw=document.getElementById('tw');
+function tick(){var r=roles[ri];tw.textContent=r.slice(0,ci);if(!del&&ci<r.length){ci++;setTimeout(tick,70)}else if(!del){del=true;setTimeout(tick,1400)}else if(ci>0){ci--;setTimeout(tick,35)}else{del=false;ri=(ri+1)%roles.length;setTimeout(tick,300)}}
+tick();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');var n=e.target.querySelector('[data-n]');if(n&&!n.d){n.d=1;var t=+n.dataset.n,c=0,s=n.dataset.s||'',st=Math.max(1,Math.ceil(t/40));var iv=setInterval(function(){c=Math.min(t,c+st);n.textContent=c+s;if(c>=t)clearInterval(iv)},35)}io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var r=document.documentElement,tg=document.getElementById('tg');
+tg.onclick=function(){var d=r.getAttribute('data-theme');var dark=d?d==='dark':!matchMedia('(prefers-color-scheme:light)').matches;r.setAttribute('data-theme',dark?'light':'dark')};
+})();
+</script>
+</body>
+</html>
